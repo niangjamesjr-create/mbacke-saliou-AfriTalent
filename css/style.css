@@ -1,0 +1,72 @@
+/* ============================================
+   RESET & BASE
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    line-height: 1.6;
+    transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.2;
+}
+/* /* ============================================
+   VARIABLES CSS (min 6 variables)
+   ============================================ */
+:root {
+    /* Couleurs principales */
+    --color-primary: #0066FF;
+    --color-primary-dark: #0052CC;
+    --color-secondary: #00D4AA;
+    --color-dark: #0A192F;
+    --color-gray: #8892B0;
+    --color-light: #F5F7FA;
+    --color-white: #FFFFFF;
+    --color-black: #0A0A0A;
+    
+    /* Typographie */
+    --font-heading: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    
+    /* Espacements */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 6rem;
+    
+    /* Ombres */
+    --shadow-sm: 0 10px 30px -15px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 20px 40px -20px rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 30px 50px -25px rgba(0, 0, 0, 0.2);
+    
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+    
+    /* Border radius */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+    --color-dark: #0A192F;
+    --color-light: #1a1a2e;
+    --color-white: #16213e;
+    --color-black: #e2e2e2;
+    --color-gray: #a0a0b0;
+    background-color: #0f0f1a;
+}
