@@ -3,18 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AfriTalent - La plateforme des freelances tech en Afrique</title>
+    <title>À propos - AfriTalent</title>
     
-    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+<body data-theme="light">
 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Afri<span>Talent</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-outline-primary btn-sm" id="darkModeToggle" aria-label="Toggle dark mode"><i class="bi bi-moon-fill"></i></button>
+                    <button class="btn btn-primary btn-sm">Rejoindre</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <button></button>
+
+    <main class="pt-5 mt-5">
+        <!-- Notre Histoire -->
+        <section class="history-section fade-in">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h2>Notre Histoire</h2>
+                        <p>Fondée en 2022 à Dakar, AfriTalent est née d'un constat simple : l'Afrique regorge de talents tech exceptionnels, mais il manquait une plateforme de confiance pour les connecter aux entreprises.</p>
+                        <p>En seulement 3 ans, nous sommes devenus la référence du freelancing tech en Afrique, avec plus de 2500 freelances et 800 entreprises partenaires. Notre mission : démocratiser l'accès au travail tech de qualité sur tout le continent.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="images/placeholder.svg" alt="Notre histoire entrepreneuriale en Afrique" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chiffres clés Bento Grid -->
+        <section class="key-numbers fade-in">
+            <div class="container">
+                <h2 class="text-center mb-5">AfriTalent en chiffres</h2>
+                <div class="bento-numbers">
+                    <div class="number-card">
+                        <div class="number" data-target="2500">0</div>
+                        <p>Freelances</p>
+                    </div>
+                    <div class="number-card">
+                        <div class="number" data-target="800">0</div>
+                        <p>Entreprises</p>
+                    </div>
+                    <div class="number-card">
+                        <div class="number" data-target="12000">0</div>
+                        <p>Missions réalisées</p>
+                    </div>
+                    <div class="number-card">
+                        <div class="number" data-target="98">0%</div>
+                        <p>Satisfaction client</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nos valeurs -->
+        <section class="values-section fade-in">
+            <div class="container">
+                <h2 class="text-center mb-5">Nos valeurs</h2>
+                <div class="row g-4">
+                    <div class="col-md-3"><div class="value-card"><i class="bi bi-lightbulb"></i><h3>Innovation</h3><p>Constamment à la pointe des technologies</p></div></div>
+                    <div class="col-md-3"><div class="value-card"><i class="bi bi-globe"></i><h3>Accessibilité</h3><p>La tech pour tous, sans barrières</p></div></div>
+                    <div class="col-md-3"><div class="value-card"><i class="bi bi-people"></i><h3>Communauté</h3><p>Ensemble, nous sommes plus forts</p></div></div>
+                    <div class="col-md-3"><div class="value-card"><i class="bi bi-trophy"></i><h3>Excellence</h3><p>La qualité avant tout</p></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- L'équipe -->
+        <section class="team-section fade-in">
+            <div class="container">
+                <h2 class="text-center mb-5">L'équipe fondatrice</h2>
+                <div class="row g-4">
+                    <div class="col-md-3"><div class="team-card"><img src="images/placeholder.svg" data-site-image="teamAicha" alt="Fondatrice"><h4>Aïcha Diop</h4><p>CEO & Co-fondatrice</p><div class="team-social"><i class="bi bi-linkedin"></i><i class="bi bi-twitter-x"></i></div></div></div>
+                    <div class="col-md-3"><div class="team-card"><img src="images/placeholder.svg" data-site-image="teamMamadou" alt="Fondateur"><h4>Mamadou Sy</h4><p>CTO & Co-fondateur</p><div class="team-social"><i class="bi bi-linkedin"></i><i class="bi bi-twitter-x"></i></div></div></div>
+                    <div class="col-md-3"><div class="team-card"><img src="images/placeholder.svg" data-site-image="teamFatou" alt="Responsable"><h4>Fatou Ndiaye</h4><p>Directrice Marketing</p><div class="team-social"><i class="bi bi-linkedin"></i><i class="bi bi-twitter-x"></i></div></div></div>
+                    <div class="col-md-3"><div class="team-card"><img src="images/placeholder.svg" data-site-image="teamIbrahim" alt="Responsable"><h4>Ibrahim Touré</h4><p>Lead Développement</p><div class="team-social"><i class="bi bi-linkedin"></i><i class="bi bi-twitter-x"></i></div></div></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4"><div class="footer-brand">Afri<span>Talent</span></div><p>La première plateforme de mise en relation entre freelances tech et entreprises en Afrique.</p></div>
+                <div class="col-md-2 mb-4"><h5>Liens utiles</h5><ul><li><a href="index.html">Accueil</a></li><li><a href="freelances.html">Freelances</a></li><li><a href="tarifs.html">Tarifs</a></li><li><a href="about.html">À propos</a></li></ul></div>
+                <div class="col-md-3 mb-4"><h5>Ressources</h5><ul><li><a href="#">Blog</a></li><li><a href="#">Guide</a></li><li><a href="#">FAQ</a></li><li><a href="#">Support</a></li></ul></div>
+                <div class="col-md-3 mb-4"><h5>Contact</h5><ul class="contact-info"><li><i class="bi bi-envelope"></i> contact@afritalent.com</li><li><i class="bi bi-telephone"></i> +221 77 804 50 04</li><li><i class="bi bi-geo-alt"></i> Dakar, Sénégal</li></ul></div>
+            </div>
+            <div class="footer-bottom"><p id="copyrightYearAbout"></p></div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/site-images.js"></script>

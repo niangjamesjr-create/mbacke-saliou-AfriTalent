@@ -3,21 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AfriTalent - La plateforme des freelances tech en Afrique</title>
+    <title>Contact - AfriTalent</title>
     
-    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+<body data-theme="light">
 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Afri<span>Talent</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-outline-primary btn-sm" id="darkModeToggle" aria-label="Toggle dark mode"><i class="bi bi-moon-fill"></i></button>
+                    <button class="btn btn-primary btn-sm">Rejoindre</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <button></button> 
+
+    <main class="pt-5 mt-5">
+        <div class="container">
+            <div class="section-header text-center fade-in">
+                <h1>Contactez-nous</h1>
+                <p>Une question ? Un projet ? Écrivez-nous !</p>
+            </div>
+
+            <div class="row fade-in">
+                <div class="col-lg-6">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="nom" class="form-label">Nom *</label>
+                            <input type="text" class="form-control" id="nom" name="nom">
+                            <div class="error-message" id="nomError"></div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="prenom" class="form-label">Prénom *</label>
+                            <input type="text" class="form-control" id="prenom" name="prenom">
+                            <div class="error-message" id="prenomError"></div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" class="form-control" id="email" name="email">
+                            <div class="error-message" id="emailError"></div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="sujet" class="form-label">Sujet *</label>
+                            <select class="form-select" id="sujet" name="sujet">
+                                <option value="">Choisissez un sujet</option>
+                                <option value="general">Question générale</option>
+                                <option value="freelance">Devenir freelance</option>
+                                <option value="entreprise">Recruter un freelance</option>
+                                <option value="support">Support technique</option>
+                            </select>
+                            <div ></div>
+                        </div>
+                        <div class="mb-3">
+                            <label >Message * (minimum 20 caractères)</label>
+                            <textarea ></textarea>
+                            <div ></div>
+                        </div>
+                        <button >Envoyer le message</button>
+                        <div ></div>
+                    </form>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="contact-info-card">
+                        <h3>Nos coordonnées</h3>
+                        <ul>
+                            <li><i class="bi bi-envelope-fill"></i> contact@afritalent.com</li>
+                            <li><i class="bi bi-telephone-fill"></i> +221 77 804 50 04</li>
+                            <li><i class="bi bi-geo-alt-fill"></i> Immeuble Talents, Dakar, Sénégal</li>
+                        </ul>
+                        
+                        <h3 class="mt-4">Google Maps</h3>
+                        <div class="map-container">
+                            <iframe 
+                                src="https://maps.google.com/maps?q=Dakar%2C%20S%C3%A9n%C3%A9gal&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                                title="Carte de Dakar, Sénégal"
+                                allowfullscreen="">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4"><div class="footer-brand">Afri<span>Talent</span></div><p>La première plateforme de mise en relation entre freelances tech et entreprises en Afrique.</p></div>
+                <div class="col-md-2 mb-4"><h5>Liens utiles</h5><ul><li><a href="index.html">Accueil</a></li><li><a href="freelances.html">Freelances</a></li><li><a href="tarifs.html">Tarifs</a></li><li><a href="about.html">À propos</a></li></ul></div>
+                <div class="col-md-3 mb-4"><h5>Ressources</h5><ul><li><a href="#">Blog</a></li><li><a href="#">Guide</a></li><li><a href="#">FAQ</a></li><li><a href="#">Support</a></li></ul></div>
+                <div class="col-md-3 mb-4"><h5>Contact</h5><ul class="contact-info"><li><i class="bi bi-envelope"></i> contact@afritalent.com</li><li><i class="bi bi-telephone"></i> +221 77 804 50 04</li><li><i class="bi bi-geo-alt"></i> Dakar, Sénégal</li></ul></div>
+            </div>
+            <div class="footer-bottom"><p id="copyrightYearContact"></p></div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/site-images.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

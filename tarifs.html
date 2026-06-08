@@ -3,21 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AfriTalent - La plateforme des freelances tech en Afrique</title>
+    <title>Tarifs - AfriTalent</title>
     
-    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+<body data-theme="light">
 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Afri<span>Talent</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="tarifs.html">Tarifs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-outline-primary btn-sm" id="darkModeToggle" aria-label="Toggle dark mode"><i class="bi bi-moon-fill"></i></button>
+                    <button class="btn btn-primary btn-sm">Rejoindre</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+    <main class="pt-5 mt-5">
+        <div class="container">
+            <div class="section-header text-center fade-in">
+                <h1>Nos tarifs</h1>
+                <p>Choisissez le plan qui correspond à vos besoins</p>
+            </div>
+
+            <div class="row g-4 pricing-row fade-in">
+                <!-- Plan Gratuit -->
+                <div class="col-md-4">
+                    <div class="pricing-card">
+                        <h3>Gratuit</h3>
+                        <div class="price">0 CFA<span>/mois</span></div>
+                        <ul>
+                            <li><i class="bi bi-check-lg"></i> 5 candidatures/mois</li>
+                            <li><i class="bi bi-check-lg"></i> Profil basique</li>
+                            <li><i class="bi bi-check-lg"></i> Accès au marketplace</li>
+                            <li><i class="bi bi-x-lg"></i> Support prioritaire</li>
+                            <li><i class="bi bi-x-lg"></i> Statistiques avancées</li>
+                        </ul>
+                        <button class="btn btn-outline-primary w-100">Commencer</button>
+                    </div>
+                </div>
+
+                <!-- Plan Pro (Recommandé) -->
+                <div class="col-md-4">
+                    <div class="pricing-card featured">
+                        <div class="popular-badge">⭐ Populaire</div>
+                        <h3>Pro</h3>
+                        <div class="price">19 000 CFA<span>/mois</span></div>
+                        <ul>
+                            <li><i class="bi bi-check-lg"></i> Candidatures illimitées</li>
+                            <li><i class="bi bi-check-lg"></i> Profil mis en avant</li>
+                            <li><i class="bi bi-check-lg"></i> Accès aux exclusivités</li>
+                            <li><i class="bi bi-check-lg"></i> Support prioritaire 24/7</li>
+                            <li><i class="bi bi-check-lg"></i> Statistiques détaillées</li>
+                        </ul>
+                        <button class="btn btn-primary w-100">Choisir Pro</button>
+                    </div>
+                </div>
+
+                <!-- Plan Entreprise -->
+                <div class="col-md-4">
+                    <div class="pricing-card">
+                        <h3>Entreprise</h3>
+                        <div class="price">Sur devis</div>
+                        <ul>
+                            <li><i class="bi bi-check-lg"></i> Solution sur mesure</li>
+                            <li><i class="bi bi-check-lg"></i> API dédiée</li>
+                            <li><i class="bi bi-check-lg"></i> Account manager</li>
+                            <li><i class="bi bi-check-lg"></i> Formation équipe</li>
+                            <li><i class="bi bi-check-lg"></i> SLA personnalisé</li>
+                        </ul>
+                        <button class="btn btn-outline-primary w-100">Nous contacter</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Accordion Bootstrap -->
+            <div class="faq-section fade-in">
+                <h2 class="text-center mb-5">Questions fréquentes</h2>
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header"><button >Comment fonctionne la période d'essai ?</button></h2>
+                        <div >Tous les plans Pro bénéficient de 14 jours d'essai gratuit, sans engagement.</div></div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 >Puis-je changer de plan à tout moment ?</button></h2>
+                        <div >Oui, vous pouvez passer d'un plan à l'autre à tout moment depuis votre espace client.</div></div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header"><button >Y a-t-il des frais de commission ?</button></h2>
+                        <div >Pour les freelances, AfriTalent prélève 5% de commission sur chaque mission. Pour les entreprises, pas de frais cachés.</div></div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header"><button >Comment sont sélectionnés les freelances ?</button></h2>
+                        <div ><div >Chaque profil est vérifié manuellement et les compétences sont testées avant validation.</div></div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 ><button >Que faire en cas de litige ?</button></h2>
+                        <div ><div >Notre équipe de médiation intervient sous 48h pour résoudre tout litige entre freelance et entreprise.</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4"><div class="footer-brand">Afri<span>Talent</span></div><p>La première plateforme de mise en relation entre freelances tech et entreprises en Afrique.</p></div>
+                <div class="col-md-2 mb-4"><h5>Liens utiles</h5><ul><li><a href="index.html">Accueil</a></li><li><a href="freelances.html">Freelances</a></li><li><a href="tarifs.html">Tarifs</a></li><li><a href="about.html">À propos</a></li></ul></div>
+                <div class="col-md-3 mb-4"><h5>Ressources</h5><ul><li><a href="#">Blog</a></li><li><a href="#">Guide</a></li><li><a href="#">FAQ</a></li><li><a href="#">Support</a></li></ul></div>
+                <div class="col-md-3 mb-4"><h5>Contact</h5><ul class="contact-info"><li><i class="bi bi-envelope"></i> contact@afritalent.com</li><li><i class="bi bi-telephone"></i> +221 77 804 50 04</li><li><i class="bi bi-geo-alt"></i> Dakar, Sénégal</li></ul></div>
+            </div>
+            <div class="footer-bottom"><p id="copyrightYearTarifs"></p></div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/site-images.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -3,18 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AfriTalent - La plateforme des freelances tech en Afrique</title>
+    <title>Freelances tech - AfriTalent</title>
     
-    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+<body data-theme="light">
 
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-brightness-alt-high-fill"></i>
+                Afri<span>Talent</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="freelances.html">Freelances</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex gap-2">
+                    <button ">
+                      
+                    </button>
+                    <button class="btn btn-primary btn-sm">Rejoindre AfriTalent</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <main class="pt-5 mt-5">
+        <div class="container">
+            <div class="section-header text-center fade-in">
+                <h1>Nos Freelances</h1>
+                <p>+2500 experts tech à votre service</p>
+            </div>
+
+            <!-- Barre de filtres -->
+            <div class="filter-bar fade-in">
+                <div class="filter-buttons">
+                    <button >Tous</button>
+                    <button >Développement Web</button>
+                    <button >Design UI/UX</button>
+                    <button >Marketing Digital</button>
+                    <button >Data & IA</button>
+                    <button >DevOps & Cloud</button>
+                </div>
+            </div>
+
+            <!-- Grille des profils -->
+            <div">
+                <!-- Les profils seront générés dynamiquement par JS -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="footer-brand">
+                        <i class="bi bi-brightness-alt-high-fill"></i>
+                        Afri<span>Talent</span>
+                    </div>
+                    <p>La première plateforme de mise en relation entre freelances tech et entreprises en Afrique.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h5>Liens utiles</h5>
+                    <ul><li><a href="index.html">Accueil</a></li><li><a href="freelances.html">Freelances</a></li><li><a href="tarifs.html">Tarifs</a></li><li><a href="about.html">À propos</a></li></ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Ressources</h5>
+                    <ul><li><a href="#">Blog</a></li><li><a href="#">Guide des freelances</a></li><li><a href="#">FAQ</a></li><li><a href="#">Support</a></li></ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Contact</h5>
+                    <ul class="contact-info">
+                        <li><i class="bi bi-envelope"></i> contact@afritalent.com</li>
+                        <li><i class="bi bi-telephone"></i> +221 77 804 50 04</li>
+                        <li><i class="bi bi-geo-alt"></i> Dakar, Sénégal</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom"><p id="copyrightYearFreelances"></p></div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/site-images.js"></script>
