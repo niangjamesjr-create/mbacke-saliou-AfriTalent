@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#166534"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="220" cy="220" r="140" fill="#22c55e" opacity="0.3"/>
+  <circle cx="1400" cy="180" r="120" fill="#f59e0b" opacity="0.25"/>
+  <circle cx="1320" cy="760" r="180" fill="#10b981" opacity="0.2"/>
+  <text x="120" y="380" fill="#ffffff" font-size="78" font-family="Inter, Arial, sans-serif" font-weight="700">African Business Talent</text>
+  <text x="120" y="460" fill="#d1fae5" font-size="42" font-family="Inter, Arial, sans-serif">Collaboration, innovation, and growth</text>
+  <rect x="120" y="520" width="720" height="8" fill="#86efac"/>
+</svg>

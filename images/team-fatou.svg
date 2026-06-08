@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <rect width="500" height="500" fill="#0f766e"/>
+  <circle cx="250" cy="200" r="98" fill="#fde68a"/>
+  <rect x="120" y="290" width="260" height="160" rx="78" fill="#c4b5fd"/>
+  <text x="250" y="470" text-anchor="middle" fill="#ccfbf1" font-size="36" font-family="Inter, Arial, sans-serif" font-weight="700">Fatou</text>
+</svg>

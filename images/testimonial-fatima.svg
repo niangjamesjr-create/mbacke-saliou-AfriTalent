@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <rect width="500" height="500" fill="#7c3aed"/>
+  <circle cx="250" cy="200" r="100" fill="#fde68a"/>
+  <rect x="130" y="290" width="240" height="150" rx="70" fill="#a7f3d0"/>
+  <text x="250" y="470" text-anchor="middle" fill="#ffffff" font-size="38" font-family="Inter, Arial, sans-serif" font-weight="700">Fatima</text>
+</svg>

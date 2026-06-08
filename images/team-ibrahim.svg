@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <rect width="500" height="500" fill="#334155"/>
+  <circle cx="250" cy="200" r="98" fill="#fbbf24"/>
+  <rect x="120" y="290" width="260" height="160" rx="78" fill="#86efac"/>
+  <text x="250" y="470" text-anchor="middle" fill="#f1f5f9" font-size="34" font-family="Inter, Arial, sans-serif" font-weight="700">Ibrahim</text>
+</svg>

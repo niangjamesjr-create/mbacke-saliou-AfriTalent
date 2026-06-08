@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <rect x="120" y="160" width="960" height="480" rx="24" fill="#ffffff" opacity="0.12"/>
+  <text x="170" y="290" fill="#ffffff" font-size="54" font-family="Inter, Arial, sans-serif" font-weight="700">Our African Innovation Story</text>
+  <text x="170" y="360" fill="#ccfbf1" font-size="34" font-family="Inter, Arial, sans-serif">Teams building products for global impact</text>
+  <circle cx="920" cy="530" r="95" fill="#22c55e" opacity="0.5"/>
+  <circle cx="780" cy="530" r="70" fill="#f59e0b" opacity="0.45"/>
+  <circle cx="660" cy="530" r="55" fill="#38bdf8" opacity="0.45"/>
+</svg>
