@@ -87,3 +87,51 @@ if (backToTopBtn) {
         });
     });
 }
+// ============================================
+// 4. COMPTEURS ANIMÉS & FADE-IN (IntersectionObserver)
+// ============================================
+// Fonction pour animer les compteurs
+function animateCounter(element, target) {
+    let current = 0;
+    const increment = target / 60;
+    const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+            element.textContent = target;
+            clearInterval(timer);
+        } else {
+            element.textContent = Math.floor(current);
+        }
+    }, 16);
+}
+
+// Observer pour les compteurs
+const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const element = entry.target;
+            const target = parseInt(element.getAttribute('data-target'));
+            if (target && !element.classList.contains('animated')) {
+                animateCounter(element, target);
+                element.classList.add('animated');
+            }
+        }
+    });
+}, { threshold: 0.5 });
+
+document.querySelectorAll('.stat-number, .number').forEach(counter => {
+    counterObserver.observe(counter);
+});
+
+// Observer pour les animations fade-in
+const fadeObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+document.querySelectorAll('.fade-in').forEach(element => {
+    fadeObserver.observe(element);
+});
