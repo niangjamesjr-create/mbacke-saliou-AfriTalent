@@ -70,3 +70,316 @@ h1, h2, h3, h4, h5, h6 {
     --color-gray: #a0a0b0;
     background-color: #0f0f1a;
 }
+
+
+
+/* ============================================
+   NAVBAR
+   ============================================ */
+.navbar {
+    background-color: transparent;
+    padding: 1rem 0;
+    transition: all var(--transition-normal);
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
+}
+
+.navbar.scrolled {
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-sm);
+    padding: 0.5rem 0;
+    -webkit-backdrop-filter: blur(0);
+    backdrop-filter: blur(0);
+}
+
+[data-theme="dark"] .navbar.scrolled {
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-sm);
+}
+
+.navbar-brand {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.navbar-brand span {
+    color: var(--color-primary);
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    margin: 0 0.5rem;
+    transition: color var(--transition-fast);
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--color-primary);
+}
+
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(0,102,255,0.05) 0%, rgba(0,212,170,0.05) 100%);
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--color-gray);
+    margin-bottom: 2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Statistiques */
+.stats-container {
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+}
+
+.stat-label {
+    color: var(--color-gray);
+    font-size: 0.9rem;
+}
+
+/* Cartes flottantes */
+.hero-img-wrapper {
+    position: relative;
+}
+
+.floating-card {
+    position: absolute;
+    background: var(--color-white);
+    padding: 0.75rem 1.25rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+}
+
+.card-1 {
+    top: 10%;
+    left: -20px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.card-2 {
+    bottom: 20%;
+    right: -20px;
+    animation: float 3s ease-in-out infinite 0.5s;
+}
+
+.card-3 {
+    top: 40%;
+    right: 10%;
+    animation: float 3s ease-in-out infinite 1s;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* ============================================
+   BENTO GRID (SECTION COMMENT ÇA MARCHE)
+   ============================================ */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.bento-card {
+    background: var(--color-light);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.bento-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.bento-card-large {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.bento-card-wide {
+    grid-column: span 2;
+}
+
+.step-number {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    opacity: 0.3;
+    margin-bottom: 1rem;
+}
+
+.step-icon {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.bento-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+/* ============================================
+   CATEGORIES
+   ============================================ */
+.category-card {
+    background: var(--color-light);
+    padding: 2rem;
+    border-radius: var(--radius-md);
+    text-align: center;
+    transition: all var(--transition-normal);
+    cursor: pointer;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: white;
+}
+
+.category-card i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+    transition: color var(--transition-normal);
+}
+
+.category-card:hover i,
+.category-card:hover .freelance-count {
+    color: white;
+}
+
+.category-card h3 {
+    font-size: 1.35rem;
+    margin-bottom: 0.5rem;
+}
+
+.freelance-count {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: var(--color-gray);
+}
+
+/* ============================================
+   TÉMOIGNAGES - CAROUSEL
+   ============================================ */
+.testimonials {
+    background: var(--color-light);
+    padding: var(--spacing-lg) 0;
+}
+
+.testimonial-card {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.testimonial-avatar {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.testimonial-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonial-stars {
+    color: #FFD700;
+    margin-bottom: 1rem;
+}
+
+.testimonial-text {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    color: var(--color-gray);
+}
+
+.testimonial-role {
+    color: var(--color-primary);
+    font-size: 0.9rem;
+}
+
+/* ============================================
+   SECTION CTA
+   ============================================ */
+.cta-section {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    margin: var(--spacing-lg) 0;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.cta-content {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: white;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-content .btn-light {
+    margin-top: 1.5rem;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+}
+
